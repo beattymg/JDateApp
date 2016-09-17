@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".JulianDateApplication"
+    android:background="#f8f8f8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Julian Date Converter"
+        android:id="@+id/titleText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:textColor="#C61616" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignTop="@+id/titleText"
+        android:id="@+id/datePicker"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:calendarViewShown="false"
+        android:calendarTextColor="#C61616"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:id="@+id/convertButton"
+        android:layout_below="@+id/datePicker"
+        android:layout_alignRight="@+id/datePicker"
+        android:layout_alignEnd="@+id/datePicker"
+        android:layout_alignLeft="@+id/datePicker"
+        android:layout_alignStart="@+id/datePicker"
+        android:background="#C61616"
+        android:textColor="#ffefefef" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/convertButton"
+        android:layout_marginTop="80dp"
+        android:text=""
+        android:id="@+id/resultText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:textColor="#C61616" />
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resultText"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resultText"
+        android:layout_marginTop="80dp"
+        android:text="Current Julian Date:"
+        android:id="@+id/currentJulianDateText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textColor="#C61616" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/currentJulianDateText"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:id="@+id/currentJulianDateTextResult"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textColor="#C61616" />
+
+</RelativeLayout>

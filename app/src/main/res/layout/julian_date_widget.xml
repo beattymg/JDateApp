@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" android:background="#000000" android:id="@+id/widget_layout">
+
+    <TextView android:id="@+id/appwidget_text" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" android:text="1234567.54321"
+        android:textColor="#C61616" android:textSize="18sp" android:textStyle="bold|italic"
+        android:layout_margin="8dp" android:contentDescription="1234567.54321"
+        android:background="#000000" />
+
+</RelativeLayout>

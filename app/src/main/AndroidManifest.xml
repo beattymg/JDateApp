@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.mbeatty.jdwidget" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon192x192"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:debuggable="true" >
+
+        <receiver android:name="com.android.mbeatty.jdwidget.JulianDateWidget"
+                  android:icon="@drawable/appicon192x192">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.example.mbeatty.jdwidget.8BITCLOCK_WIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/julian_date_widget_info" />
+        </receiver>
+
+        <activity
+            android:name="com.android.mbeatty.jdwidget.JulianDateApplication"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
